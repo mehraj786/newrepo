@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/bootstrap.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<!-- <body background="./images/College.jpg"> -->
+<body>
+<div class="container-fluid">
+
+<div class="row-fluid" style="margin-top:80px;margin-left:380px;"><h2><font color="blue">Employee Profile Form</font></h2></div>
+<div class="row"></div>
+<form class="form-horizontal" action="./createProfilejsp" method="post">
+
+	<!-- <div class="form-group">
+		<label class="control-label col-sm-4">Employee ID</label>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" name="empid" pattern="[0-9]{1,}" title="enter only digits" placeholder="enter employee id" required/>
+		</div>
+	</div> -->
+	
+	<div class="form-group">
+		<label class="control-label col-sm-4">First Name</label>
+		<div class="col-sm-4">
+			<input type="text" name="fname" class="form-control"  placeholder="enter first name" required/>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-4">Middle Name</label>
+		<div class="col-sm-4">
+			<input type="text" name="mname" class="form-control" placeholder="enter middle name" required/>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-4">Last Name</label>
+		<div class="col-sm-4">
+			<input type="text" name="lname"  class="form-control" placeholder="enter last name" required/>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-4">Department Name</label>
+		<div class="col-sm-4">
+			<input type="text" name="deptname" class="form-control"  placeholder="enter department name" required/>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-4">Salary</label>
+		<div class="col-sm-4">
+			<input type="text" name="salary" class="form-control" placeholder="enter salary" required/>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-4">Password</label>
+		<div class="col-sm-4">
+			<input type="password" name="pass" class="form-control"  placeholder="enter password" required/>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-4">Admin</label>
+			<div class="col-sm-4">
+				<select class="form-control" name="admin">
+  					<option value="Y" required>YES</option>
+ 		 			<option value="N" required>NO</option>
+				</select>
+		</div>
+	</div>
+	
+		<div class="form-group" style="margin-left:450px;">
+			<input type="submit" class=" btn btn-success" value="submit"/>
+			<div class="col-sm-2">
+			<input type="reset"  value="reset" class="btn btn-danger" />
+			</div>
+		</div>
+
+</form>
+</div>
+</body>
+</html>

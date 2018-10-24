@@ -1,0 +1,23 @@
+create database cloud_db;
+
+CREATE TABLE `EMPLOYEE_INFO` (
+  `empid` int(11) NOT NULL AUTO_INCREMENT,
+  `firstname` varchar(45) NOT NULL,
+  `middlename` varchar(45) NOT NULL,
+  `lastname` varchar(45) NOT NULL,
+  PRIMARY KEY (`empid`)
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `EMPLOYEES_OTHERINFO` (
+  `empid` int(11) NOT NULL AUTO_INCREMENT,
+  `isadmin` char(1) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  PRIMARY KEY (`empid`)
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `SALARY_INFO` (
+  `empid` int(11) NOT NULL AUTO_INCREMENT,
+  `deptname` varchar(45) NOT NULL,
+  `salary` decimal(10,2) NOT NULL,
+  PRIMARY KEY (`empid`)
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
